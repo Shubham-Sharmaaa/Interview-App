@@ -1,0 +1,18 @@
+# Versions below were the current stable releases as of Sept 2026 (checked via PyPI).
+# `pip install -r requirements.txt` will pull any newer compatible patch/minor release
+# unless you pin harder yourself — that's fine, these are floors, not exact pins.
+
+fastapi>=0.141.1
+uvicorn[standard]>=0.52.4
+pymongo[srv]>=4.18.1        # pymongo.AsyncMongoClient lives here — no Motor, no Beanie
+pydantic>=2.9.0
+email-validator>=2.2.0      # required for pydantic's EmailStr type
+pydantic-settings>=2.6.0    # typed loading of .env into a Settings object
+pyjwt>=2.7.0
+bcrypt>=4.2.0
+google-genai>=2.23.0        # official Gemini SDK (google-generativeai is deprecated/archived)
+python-dotenv>=1.2.0
+pytest>=9.1.1
+pytest-asyncio>=0.24.0       # lets async def tests/fixtures run without manual event-loop plumbing
+asgi-lifespan>=2.1.0          # drives the app's lifespan explicitly in async tests — see conftest.py
+httpx>=0.28.0                # the async test client itself, via httpx.AsyncClient + ASGITransport

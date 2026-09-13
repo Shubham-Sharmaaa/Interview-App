@@ -1,0 +1,35 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# In the Render dashboard: New > Blueprint, connect this repo, and Render
+# reads this file automatically. sync: false means "needed, but don't
+# store the value here" -- Render prompts for those in the dashboard
+# instead, which is where MONGODB_URI/JWT_SECRET/GEMINI_API_KEY/
+# FRONTEND_ORIGIN belong (secrets, and FRONTEND_ORIGIN isn't known until
+# after the frontend is deployed to Vercel — see the README's deployment
+# section for the exact order).
+
+services:
+  - type: web
+    name: interview-app-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: MONGODB_DB_NAME
+        value: interview_app
+      - key: MONGODB_TEST_DB_NAME
+        value: interview_app_test
+      - key: JWT_EXPIRE_MINUTES
+        value: "120"
+      - key: GEMINI_MODEL
+        value: gemini-3.7-flash
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        sync: false
