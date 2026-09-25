@@ -23,7 +23,11 @@ request after a while will take 30–60s to wake up.)</sub>
   Save them under docs/screenshots/ and reference them like:
   ![Interview in progress](docs/screenshots/chat.png)
 -->
-*(Screenshots go here — see the comment in this file for what to capture.)*
+<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/d642d58d-3916-4175-8296-a4cb4ceddbb6" />
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/c97ad839-739f-4396-b095-188d7b3026f9" />
+<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/e5b64682-57c1-4c60-8c23-5be3c9f61db9" />
+<img width="1917" height="990" alt="image" src="https://github.com/user-attachments/assets/4afc9960-67e4-4dcd-8c4f-89c3b9d50bab" />
+
 
 ## What it does
 
