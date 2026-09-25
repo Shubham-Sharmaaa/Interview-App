@@ -5,12 +5,11 @@ focus areas, then practice against an AI interviewer that asks follow-up
 questions based on your actual answers, ends after a bounded number of
 questions, and gives you specific, transcript-grounded feedback at the end.
 
-**Live demo:** [your-app.vercel.app](https://your-app.vercel.app) &nbsp;·&nbsp;
-**API:** [your-backend.onrender.com/health](https://your-backend.onrender.com/health)
+**Live demo:** [https://interview-app-swart-six.vercel.app/](https://interview-app-swart-six.vercel.app/) &nbsp;·&nbsp;
+**API:** [https://interview-app-backend-1wyp.onrender.com](https://interview-app-backend-1wyp.onrender.com/health)
 <br><sub>(Render's free tier sleeps after 15 minutes idle — the first
 request after a while will take 30–60s to wake up.)</sub>
 
-> Replace the two links above with your actual deployed URLs.
 
 ## Screenshots
 
